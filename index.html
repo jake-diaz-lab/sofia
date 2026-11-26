@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sofía 🎡 · Reina de la feria</title>
+<meta name="description" content="La página oficial de Sofía: cara de pocos amigos, rueda de la fortuna de fondo y toda la actitud de la feria.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sofía 🎡 · Reina de la feria">
+<meta property="og:description" content="Cara de pocos amigos, rueda de la fortuna de fondo y toda la actitud de la feria.">
+<meta property="og:image" content="https://jake-diaz-lab.github.io/sofia/assets/sofia.jpg">
+<meta property="og:image:alt" content="Selfie nocturna de Sofía arrugando la cara frente a una rueda de la fortuna iluminada">
+<meta property="og:url" content="https://jake-diaz-lab.github.io/sofia/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#0b0a2e">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎡</text></svg>">
+<style>
+:root{--blue:#4f5bff;--blue2:#8fa2ff;--orange:#ff6a2b;--yellow:#ffd23f;--bg:#0b0a2e;--ink:#f5f3ff}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{min-height:100vh;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:var(--ink);
+  background:radial-gradient(1200px 700px at 50% -10%,#2a2bb0 0%,transparent 60%),radial-gradient(600px 400px at 90% 110%,#ff6a2b33,transparent 70%),var(--bg);
+  display:flex;flex-direction:column;align-items:center;overflow-x:hidden}
+.lights{position:fixed;inset:0;pointer-events:none;z-index:0}
+.lights i{position:absolute;width:6px;height:6px;border-radius:50%;background:var(--blue2);box-shadow:0 0 10px 3px var(--blue);opacity:.55;animation:tw 2.4s infinite ease-in-out}
+@keyframes tw{50%{opacity:.1;transform:scale(.6)}}
+main{position:relative;z-index:1;width:100%;max-width:560px;padding:28px 20px 16px;text-align:center}
+.kicker{display:inline-block;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;color:var(--yellow);border:1px solid #ffd23f66;border-radius:999px;padding:6px 12px;margin:0 0 14px}
+h1{font-size:clamp(3rem,15vw,5.2rem);line-height:1;margin:0 0 8px;font-weight:900;letter-spacing:-.02em;
+  background:linear-gradient(90deg,var(--yellow),var(--orange) 45%,var(--blue2));-webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 4px 18px #4f5bff66)}
+.tag{font-size:1.15rem;line-height:1.45;margin:0 auto 22px;max-width:30ch;color:#e4e2ff}
+figure{margin:0 auto 18px;position:relative;cursor:pointer;-webkit-tap-highlight-color:transparent}
+figure img{display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;border-radius:28px;
+  box-shadow:0 0 0 3px #ffffff22,0 0 30px 6px #4f5bff88,0 0 70px 10px #ff6a2b44,0 0 110px 20px #ffd23f22;
+  animation:glow 5s infinite alternate ease-in-out;transition:transform .2s}
+figure:active img{transform:scale(.98) rotate(-1deg)}
+@keyframes glow{to{box-shadow:0 0 0 3px #ffffff33,0 0 40px 8px #ff6a2b77,0 0 80px 14px #4f5bff66,0 0 120px 24px #ffd23f33}}
+figcaption{position:absolute;left:50%;bottom:16px;transform:translateX(-50%);width:max-content;max-width:90%;
+  background:#0b0a2ecc;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border:1px solid #ffffff33;border-radius:999px;padding:8px 16px;font-weight:700;font-size:1rem}
+.hint{font-size:.85rem;color:#b9b6e8;margin:0 0 18px}
+button{font:inherit;font-weight:800;font-size:1.05rem;color:#1a1033;border:0;border-radius:999px;padding:14px 22px;cursor:pointer;
+  background:linear-gradient(90deg,var(--yellow),var(--orange));box-shadow:0 6px 24px #ff6a2b55;transition:transform .12s}
+button:active{transform:scale(.96)}
+button:focus-visible{outline:3px solid var(--blue2);outline-offset:3px}
+.facts{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:10px;text-align:left}
+.facts li{background:#ffffff0d;border:1px solid #ffffff1f;border-radius:16px;padding:12px 16px;line-height:1.4}
+footer{position:relative;z-index:1;padding:24px 16px 32px;font-size:.9rem;color:#b9b6e8}
+.c{position:fixed;top:-12px;z-index:5;width:9px;height:14px;border-radius:2px;pointer-events:none;animation:fall linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg)}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="lights" aria-hidden="true"></div>
+<main>
+  <p class="kicker">🎡 Edición feria nocturna</p>
+  <h1>Sofía</h1>
+  <p class="tag">La rueda de la fortuna da vueltas, la feria brilla… y Sofía le pone la cara más intensa de toda la noche. 😤</p>
+  <figure id="foto" title="Tócame">
+    <img src="assets/sofia.jpg" width="1200" height="1600" alt="Selfie nocturna de Sofía arrugando la cara con mucha actitud, frente a una rueda de la fortuna gigante iluminada de azul, con postes naranjas y amarillos.">
+    <figcaption id="cap" aria-live="polite">Cara de: “¿quién me echó limón?” 🍋</figcaption>
+  </figure>
+  <p class="hint">Toca la foto para encender la feria ✨</p>
+  <button id="btn" type="button">Pon cara de… 🎲</button>
+  <ul class="facts">
+    <li>🎡 <b>Fondo:</b> una rueda de la fortuna más iluminada que árbol de Navidad.</li>
+    <li>😤 <b>Expresión:</b> nivel jefa final. Nadie le gana el duelo de miradas.</li>
+    <li>✨ <b>Vibra:</b> feria de noche, luces azules y pura actitud.</li>
+  </ul>
+</main>
+<footer>Hecha por Jake 😤 para Diaz</footer>
+<script>
+(function(){
+  var L=document.querySelector('.lights'),cols=['#8fa2ff','#ffd23f','#ff6a2b'];
+  for(var i=0;i<28;i++){var d=document.createElement('i');d.style.left=Math.random()*100+'%';d.style.top=Math.random()*100+'%';
+    var c=cols[i%3];d.style.background=c;d.style.boxShadow='0 0 10px 3px '+c;d.style.animationDelay=(Math.random()*2.4)+'s';L.appendChild(d)}
+  var jokes=["Cara de: “¿quién me echó limón?” 🍋","Cara de: “ya van tres vueltas y no me bajan” 🎡","Cara de: “¿cómo que ya se acabaron los churros?” 🥨",
+    "Cara de: “sí me subo… pero no me hablen” 😤","Cara de: “esa rueda me está viendo feo” 👀","Cara de: “la foto era para la rueda, no para mí” 📸",
+    "Cara de: “aquí mando yo, feria” 👑","Cara de: “¿quién apagó la música?” 🎶"],k=0,cap=document.getElementById('cap');
+  document.getElementById('btn').addEventListener('click',function(){k=(k+1)%jokes.length;cap.textContent=jokes[k];burst(24)});
+  document.getElementById('foto').addEventListener('click',function(){burst(70)});
+  function burst(n){if(matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+    var pal=['#4f5bff','#8fa2ff','#ff6a2b','#ffd23f','#ffffff'];
+    for(var i=0;i<n;i++){var e=document.createElement('span');e.className='c';e.style.left=Math.random()*100+'vw';
+      e.style.background=pal[i%pal.length];e.style.animationDuration=(1.6+Math.random()*1.8)+'s';e.style.animationDelay=(Math.random()*.4)+'s';
+      document.body.appendChild(e);setTimeout(function(x){x.remove()}.bind(null,e),4200)}}
+})();
+</script>
+</body>
+</html>
